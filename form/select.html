@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <style type="text/css">
+      .select-list select {
+        height: auto; 
+        padding: 0 !important;
+      }
+      .select-list select option {
+        padding: 0.5em 1em;
+      }
+    </style>
+  </head>
+<body>
+  
+  <div class="box">
+    <label class="label">Normal</label>
+    <div class="select">
+      <select>
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Orange">Orange</option>
+      </select>
+    </div>
+
+    <label class="label">Multiple</label>
+    <div class="select select-list is-multiple">
+      <select size="8">
+        <option value="Argentina">Argentina</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Chile">Chile</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Ecuador">Ecuador</option>
+      </select>
+    </div>
+    <div class="select is-multiple">
+      <select multiple size="8">
+        <option value="Argentina">Argentina</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Chile">Chile</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Ecuador">Ecuador</option>
+      </select>
+    </div>
+  </div>
+
+</body>
+</html>

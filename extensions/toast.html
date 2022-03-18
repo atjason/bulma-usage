@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-toast@2.4.1/dist/bulma-toast.min.js"></script>
+  </head>
+<body>
+  <div class="box" x-data>
+    <button @click="showToast()">Show Toast</button>
+    <a href="https://rfoel.github.io/bulma-toast/#doc">Usage</a>
+  </div>
+
+  <script>
+    function showToast() {
+      bulmaToast.toast({ 
+        message: 'Hello There',
+        type: 'is-danger',
+        duration: 2000,
+        position: "top-center",
+        dismissible: true,
+        pauseOnHover: true,
+        closeOnClick: false,
+      })
+    }
+  </script>
+</body>
+</html>
